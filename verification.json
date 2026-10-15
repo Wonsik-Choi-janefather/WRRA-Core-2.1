@@ -1,0 +1,434 @@
+{
+  "title": "WRRA Core 2.1",
+  "model": "finite symbolic demonstrator",
+  "assumptions": [
+    "trusted single-process monitor",
+    "declared exact symbolic costs",
+    "no concurrent external mutation",
+    "checkpoint restores a description"
+  ],
+  "verification": {
+    "passed": 9,
+    "total": 9
+  },
+  "cases": [
+    {
+      "name": "one_time_output_override_preserves_structure",
+      "passed": true,
+      "events": [
+        {
+          "proposal": {
+            "revision": 0,
+            "kind": "phenotype",
+            "envelope": 100,
+            "weights": [
+              50,
+              50
+            ],
+            "evidence": true,
+            "authorized": true
+          },
+          "status": "COMMIT",
+          "reason": "authorized",
+          "Q": 1,
+          "parent_structure": "471ed21be77787f36f43cd071df911bdac011eb023051560a037bfbf33aa9567",
+          "successor_structure": "471ed21be77787f36f43cd071df911bdac011eb023051560a037bfbf33aa9567",
+          "structure_version": 1,
+          "phenotype": [
+            "50",
+            "50"
+          ],
+          "action_cost": 100,
+          "monitoring_cost": 1,
+          "budget_before": 1000,
+          "budget_after": 900,
+          "monitoring_before": 100,
+          "monitoring_after": 99
+        },
+        {
+          "proposal": {
+            "revision": 1,
+            "kind": "render",
+            "envelope": 100,
+            "weights": null,
+            "evidence": true,
+            "authorized": true
+          },
+          "status": "COMMIT",
+          "reason": "authorized",
+          "Q": 1,
+          "parent_structure": "471ed21be77787f36f43cd071df911bdac011eb023051560a037bfbf33aa9567",
+          "successor_structure": "471ed21be77787f36f43cd071df911bdac011eb023051560a037bfbf33aa9567",
+          "structure_version": 1,
+          "phenotype": [
+            "60",
+            "40"
+          ],
+          "action_cost": 100,
+          "monitoring_cost": 1,
+          "budget_before": 900,
+          "budget_after": 800,
+          "monitoring_before": 99,
+          "monitoring_after": 98
+        }
+      ]
+    },
+    {
+      "name": "amendment_inherited_by_subsequent_execution",
+      "passed": true,
+      "events": [
+        {
+          "proposal": {
+            "revision": 0,
+            "kind": "genotype",
+            "envelope": 100,
+            "weights": [
+              50,
+              50
+            ],
+            "evidence": true,
+            "authorized": true
+          },
+          "status": "COMMIT",
+          "reason": "authorized",
+          "Q": 1,
+          "parent_structure": "471ed21be77787f36f43cd071df911bdac011eb023051560a037bfbf33aa9567",
+          "successor_structure": "224e4aeac6adba584d57d8b98f53ad40dee357a4bb20dd2d9c5d23402f68e5bd",
+          "structure_version": 2,
+          "phenotype": null,
+          "action_cost": 2,
+          "monitoring_cost": 1,
+          "budget_before": 1000,
+          "budget_after": 998,
+          "monitoring_before": 100,
+          "monitoring_after": 99
+        },
+        {
+          "proposal": {
+            "revision": 1,
+            "kind": "render",
+            "envelope": 100,
+            "weights": null,
+            "evidence": true,
+            "authorized": true
+          },
+          "status": "COMMIT",
+          "reason": "authorized",
+          "Q": 1,
+          "parent_structure": "224e4aeac6adba584d57d8b98f53ad40dee357a4bb20dd2d9c5d23402f68e5bd",
+          "successor_structure": "224e4aeac6adba584d57d8b98f53ad40dee357a4bb20dd2d9c5d23402f68e5bd",
+          "structure_version": 2,
+          "phenotype": [
+            "50",
+            "50"
+          ],
+          "action_cost": 100,
+          "monitoring_cost": 1,
+          "budget_before": 998,
+          "budget_after": 898,
+          "monitoring_before": 99,
+          "monitoring_after": 98
+        }
+      ]
+    },
+    {
+      "name": "reconstruction_and_tamper_rejection",
+      "passed": true,
+      "events": [
+        {
+          "Q": 1,
+          "action_cost": 2,
+          "budget_after": 998,
+          "budget_before": 1000,
+          "monitoring_after": 99,
+          "monitoring_before": 100,
+          "monitoring_cost": 1,
+          "parent_structure": "471ed21be77787f36f43cd071df911bdac011eb023051560a037bfbf33aa9567",
+          "phenotype": null,
+          "proposal": {
+            "authorized": true,
+            "envelope": 100,
+            "evidence": true,
+            "kind": "genotype",
+            "revision": 0,
+            "weights": [
+              50,
+              50
+            ]
+          },
+          "reason": "authorized",
+          "status": "COMMIT",
+          "structure_version": 2,
+          "successor_structure": "224e4aeac6adba584d57d8b98f53ad40dee357a4bb20dd2d9c5d23402f68e5bd"
+        },
+        {
+          "Q": 1,
+          "action_cost": 100,
+          "budget_after": 898,
+          "budget_before": 998,
+          "monitoring_after": 98,
+          "monitoring_before": 99,
+          "monitoring_cost": 1,
+          "parent_structure": "224e4aeac6adba584d57d8b98f53ad40dee357a4bb20dd2d9c5d23402f68e5bd",
+          "phenotype": [
+            "50",
+            "50"
+          ],
+          "proposal": {
+            "authorized": true,
+            "envelope": 100,
+            "evidence": true,
+            "kind": "render",
+            "revision": 1,
+            "weights": null
+          },
+          "reason": "authorized",
+          "status": "COMMIT",
+          "structure_version": 2,
+          "successor_structure": "224e4aeac6adba584d57d8b98f53ad40dee357a4bb20dd2d9c5d23402f68e5bd"
+        },
+        {
+          "proposal": {
+            "revision": 2,
+            "kind": "render",
+            "envelope": 100,
+            "weights": null,
+            "evidence": true,
+            "authorized": true
+          },
+          "status": "COMMIT",
+          "reason": "authorized",
+          "Q": 1,
+          "parent_structure": "224e4aeac6adba584d57d8b98f53ad40dee357a4bb20dd2d9c5d23402f68e5bd",
+          "successor_structure": "224e4aeac6adba584d57d8b98f53ad40dee357a4bb20dd2d9c5d23402f68e5bd",
+          "structure_version": 2,
+          "phenotype": [
+            "50",
+            "50"
+          ],
+          "action_cost": 100,
+          "monitoring_cost": 1,
+          "budget_before": 898,
+          "budget_after": 798,
+          "monitoring_before": 98,
+          "monitoring_after": 97
+        }
+      ]
+    },
+    {
+      "name": "changed_input_changes_phenotype_without_genotype_change",
+      "passed": true,
+      "events": [
+        {
+          "proposal": {
+            "revision": 0,
+            "kind": "render",
+            "envelope": 80,
+            "weights": null,
+            "evidence": true,
+            "authorized": true
+          },
+          "status": "COMMIT",
+          "reason": "authorized",
+          "Q": 1,
+          "parent_structure": "471ed21be77787f36f43cd071df911bdac011eb023051560a037bfbf33aa9567",
+          "successor_structure": "471ed21be77787f36f43cd071df911bdac011eb023051560a037bfbf33aa9567",
+          "structure_version": 1,
+          "phenotype": [
+            "48",
+            "32"
+          ],
+          "action_cost": 80,
+          "monitoring_cost": 1,
+          "budget_before": 1000,
+          "budget_after": 920,
+          "monitoring_before": 100,
+          "monitoring_after": 99
+        }
+      ]
+    },
+    {
+      "name": "stale_amendment_denied",
+      "passed": true,
+      "events": [
+        {
+          "proposal": {
+            "revision": 0,
+            "kind": "render",
+            "envelope": 100,
+            "weights": null,
+            "evidence": true,
+            "authorized": true
+          },
+          "status": "COMMIT",
+          "reason": "authorized",
+          "Q": 1,
+          "parent_structure": "471ed21be77787f36f43cd071df911bdac011eb023051560a037bfbf33aa9567",
+          "successor_structure": "471ed21be77787f36f43cd071df911bdac011eb023051560a037bfbf33aa9567",
+          "structure_version": 1,
+          "phenotype": [
+            "60",
+            "40"
+          ],
+          "action_cost": 100,
+          "monitoring_cost": 1,
+          "budget_before": 1000,
+          "budget_after": 900,
+          "monitoring_before": 100,
+          "monitoring_after": 99
+        },
+        {
+          "proposal": {
+            "revision": 0,
+            "kind": "genotype",
+            "envelope": 100,
+            "weights": [
+              50,
+              50
+            ],
+            "evidence": true,
+            "authorized": true
+          },
+          "status": "DENY",
+          "reason": "stale_revision",
+          "Q": 0,
+          "parent_structure": "471ed21be77787f36f43cd071df911bdac011eb023051560a037bfbf33aa9567",
+          "successor_structure": "471ed21be77787f36f43cd071df911bdac011eb023051560a037bfbf33aa9567",
+          "structure_version": 1,
+          "phenotype": null,
+          "action_cost": 0,
+          "monitoring_cost": 1,
+          "budget_before": 900,
+          "budget_after": 900,
+          "monitoring_before": 99,
+          "monitoring_after": 98
+        }
+      ]
+    },
+    {
+      "name": "missing_evidence_remains_open",
+      "passed": true,
+      "events": [
+        {
+          "proposal": {
+            "revision": 0,
+            "kind": "genotype",
+            "envelope": 100,
+            "weights": [
+              50,
+              50
+            ],
+            "evidence": false,
+            "authorized": true
+          },
+          "status": "OPEN",
+          "reason": "missing_evidence",
+          "Q": 0,
+          "parent_structure": "471ed21be77787f36f43cd071df911bdac011eb023051560a037bfbf33aa9567",
+          "successor_structure": "471ed21be77787f36f43cd071df911bdac011eb023051560a037bfbf33aa9567",
+          "structure_version": 1,
+          "phenotype": null,
+          "action_cost": 0,
+          "monitoring_cost": 1,
+          "budget_before": 1000,
+          "budget_after": 1000,
+          "monitoring_before": 100,
+          "monitoring_after": 99
+        }
+      ]
+    },
+    {
+      "name": "unauthorized_amendment_denied",
+      "passed": true,
+      "events": [
+        {
+          "proposal": {
+            "revision": 0,
+            "kind": "genotype",
+            "envelope": 100,
+            "weights": [
+              50,
+              50
+            ],
+            "evidence": true,
+            "authorized": false
+          },
+          "status": "DENY",
+          "reason": "missing_permission",
+          "Q": 0,
+          "parent_structure": "471ed21be77787f36f43cd071df911bdac011eb023051560a037bfbf33aa9567",
+          "successor_structure": "471ed21be77787f36f43cd071df911bdac011eb023051560a037bfbf33aa9567",
+          "structure_version": 1,
+          "phenotype": null,
+          "action_cost": 0,
+          "monitoring_cost": 1,
+          "budget_before": 1000,
+          "budget_after": 1000,
+          "monitoring_before": 100,
+          "monitoring_after": 99
+        }
+      ]
+    },
+    {
+      "name": "invalid_structure_denied",
+      "passed": true,
+      "events": [
+        {
+          "proposal": {
+            "revision": 0,
+            "kind": "genotype",
+            "envelope": 100,
+            "weights": [
+              -1,
+              2
+            ],
+            "evidence": true,
+            "authorized": true
+          },
+          "status": "DENY",
+          "reason": "invalid_weights",
+          "Q": 0,
+          "parent_structure": "471ed21be77787f36f43cd071df911bdac011eb023051560a037bfbf33aa9567",
+          "successor_structure": "471ed21be77787f36f43cd071df911bdac011eb023051560a037bfbf33aa9567",
+          "structure_version": 1,
+          "phenotype": null,
+          "action_cost": 0,
+          "monitoring_cost": 1,
+          "budget_before": 1000,
+          "budget_after": 1000,
+          "monitoring_before": 100,
+          "monitoring_after": 99
+        }
+      ]
+    },
+    {
+      "name": "reserve_preserving_denial",
+      "passed": true,
+      "events": [
+        {
+          "proposal": {
+            "revision": 0,
+            "kind": "render",
+            "envelope": 100,
+            "weights": null,
+            "evidence": true,
+            "authorized": true
+          },
+          "status": "DENY",
+          "reason": "insufficient_resources",
+          "Q": 0,
+          "parent_structure": "471ed21be77787f36f43cd071df911bdac011eb023051560a037bfbf33aa9567",
+          "successor_structure": "471ed21be77787f36f43cd071df911bdac011eb023051560a037bfbf33aa9567",
+          "structure_version": 1,
+          "phenotype": null,
+          "action_cost": 0,
+          "monitoring_cost": 1,
+          "budget_before": 100,
+          "budget_after": 100,
+          "monitoring_before": 100,
+          "monitoring_after": 99
+        }
+      ]
+    }
+  ]
+}
