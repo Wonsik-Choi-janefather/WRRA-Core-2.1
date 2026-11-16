@@ -1,8 +1,0 @@
-{
-  "environment": "Linux x86-64, Python 3.12.14",
-  "cases": 96,
-  "independent_processes_per_mode": 9,
-  "timing_batches_per_process": 200,
-  "rules": {"correct":96,"uncompressed_bytes":7615,"gzip_bytes":2289,"retained_python_bytes":13809,"first_run_peak_python_bytes":152184,"peak_rss_kib":11264,"median_batch_us":1065.43},
-  "full_test_lookup": {"correct":96,"uncompressed_bytes":11104,"gzip_bytes":985,"retained_python_bytes":30435,"first_run_peak_python_bytes":51017,"peak_rss_kib":11264,"median_batch_us":17.73}
-}
