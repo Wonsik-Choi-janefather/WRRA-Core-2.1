@@ -1,0 +1,85 @@
+{
+  "load_ms": 2447.68,
+  "peak_process_mib": 602.45,
+  "model_files_bytes": 486212372,
+  "assent_median_ms": 3422.07,
+  "full_flow_ms": 11418.15,
+  "turns": {
+    "item_correction": {
+      "route": "Small",
+      "first": "아디오 녹차요.",
+      "second": "하디오 녹차요",
+      "voiced_ms": 1180,
+      "latency_ms": 3951.25,
+      "status": "clarification",
+      "prompt": "녹차 한 잔 맞으세요?",
+      "order": null
+    },
+    "quantity_correction": {
+      "route": "Small",
+      "first": "아니요, 두 잔이요.",
+      "second": "아니요. 두 잔이요.",
+      "voiced_ms": 1160,
+      "latency_ms": 3918.84,
+      "status": "clarification",
+      "prompt": "녹차 두 잔 맞으세요?",
+      "order": null
+    },
+    "short_assent": {
+      "route": "Small",
+      "first": "네.",
+      "second": "네",
+      "voiced_ms": 140,
+      "latency_ms": 3548.06,
+      "status": "accepted",
+      "prompt": null,
+      "order": {
+        "품목": "녹차",
+        "수량": "두잔"
+      }
+    },
+    "original_assent": {
+      "route": "Small",
+      "first": "네.",
+      "second": "네.",
+      "voiced_ms": 160,
+      "latency_ms": 3296.09,
+      "status": "accepted",
+      "prompt": null,
+      "order": {
+        "품목": "녹차",
+        "수량": "한잔"
+      }
+    },
+    "assent_without_question": {
+      "route": "Small",
+      "first": "네.",
+      "second": "네",
+      "voiced_ms": 140,
+      "latency_ms": 3340.84,
+      "status": "no_decision",
+      "prompt": null,
+      "order": null
+    },
+    "opening_noise": {
+      "route": "Small",
+      "first": "",
+      "second": "",
+      "voiced_ms": 120,
+      "latency_ms": 3670.87,
+      "status": "no_decision",
+      "prompt": null,
+      "order": null
+    },
+    "cancel_with_question": {
+      "route": "Small",
+      "first": "아니요, 됐어요.",
+      "second": "아니요 됐어요",
+      "voiced_ms": 1040,
+      "latency_ms": 3653.89,
+      "status": "rejected",
+      "prompt": null,
+      "order": null
+    }
+  }
+}

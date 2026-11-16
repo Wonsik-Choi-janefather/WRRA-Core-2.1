@@ -1,0 +1,21 @@
+{
+  "python": "3.12.14",
+  "architecture": "x86_64",
+  "engine_source_and_data_bytes": 55529,
+  "clip_seconds": 1.64,
+  "model_files_bytes": 486212372,
+  "model_load_ms": 2359.64,
+  "cold_first_two_pass_ms": 3477.18,
+  "cold_first_with_rule_cycle_ms": 3482.12,
+  "warm_two_pass": {
+    "count": 10,
+    "median_ms": 3581.5101,
+    "p95_ms": 3867.5246
+  },
+  "warm_with_rule_cycle": {
+    "count": 10,
+    "median_ms": 3583.3086,
+    "p95_ms": 3869.3777
+  },
+  "peak_process_mib": 602.23
+}

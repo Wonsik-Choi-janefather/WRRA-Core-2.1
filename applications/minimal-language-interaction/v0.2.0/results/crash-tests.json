@@ -1,0 +1,52 @@
+[
+  {
+    "test": "before_approval_commit",
+    "orders_after_interruption": 0,
+    "recovered_on_first_dispatch": false,
+    "final_orders": 1
+  },
+  {
+    "test": "after_approval_commit",
+    "orders_after_interruption": 0,
+    "recovered_on_first_dispatch": true,
+    "final_orders": 1
+  },
+  {
+    "test": "before_registry_commit",
+    "orders_after_interruption": 0,
+    "recovered_on_first_dispatch": true,
+    "final_orders": 1
+  },
+  {
+    "test": "after_registry_commit_before_reply",
+    "orders_after_interruption": 1,
+    "recovered_on_first_dispatch": true,
+    "final_orders": 1
+  },
+  {
+    "test": "after_registry_reply",
+    "orders_after_interruption": 1,
+    "recovered_on_first_dispatch": true,
+    "final_orders": 1
+  },
+  {
+    "test": "before_ack_commit",
+    "orders_after_interruption": 1,
+    "recovered_on_first_dispatch": true,
+    "final_orders": 1
+  },
+  {
+    "test": "after_ack_commit",
+    "orders_after_interruption": 1,
+    "recovered_on_first_dispatch": false,
+    "final_orders": 1
+  },
+  {
+    "test": "two_workers_and_conflicting_reuse",
+    "final_orders": 1
+  },
+  {
+    "test": "two_valid_approvals_same_order_details",
+    "final_orders": 2
+  }
+]

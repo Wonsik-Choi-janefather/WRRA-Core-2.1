@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: Please cite the research preprint when using these materials.
+title: A Minimal Execution Architecture for Language Interaction
+authors:
+  - family-names: Choi
+    given-names: Wonsik
+    email: janefather@gmail.com
+    orcid: https://orcid.org/0009-0001-4263-9772
+version: 0.2.0
+date-released: 2026-11-16
+repository-code: https://github.com/Wonsik-Choi-janefather/WRRA-Core-2.1/tree/main/applications/minimal-language-interaction/v0.2.0
+doi: 10.5281/zenodo.24277072

@@ -1,0 +1,11 @@
+{
+  "python": "3.12.14",
+  "architecture": "x86_64",
+  "engine_source_and_data_bytes": 55529,
+  "rule_cycle": {
+    "count": 500,
+    "median_ms": 0.8014,
+    "p95_ms": 1.0821
+  },
+  "peak_process_mib": 13.38
+}

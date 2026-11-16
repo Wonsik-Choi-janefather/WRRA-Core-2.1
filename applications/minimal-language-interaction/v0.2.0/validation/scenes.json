@@ -1,0 +1,12 @@
+[
+  {"id":"01","direction":"A가 직원에게 자기 주문을 확인한다.","speaker":"A","recipient":"카페","dialogue":"a","question":"current","expected":{"a":{"품목":"녹차","수량":"한잔"}}},
+  {"id":"02","direction":"B가 직원에게 자기 주문을 확인한다.","speaker":"B","recipient":"카페","dialogue":"b","question":"current","expected":{"b":{"품목":"보리차","수량":"두잔"}}},
+  {"id":"03","direction":"A의 질문에 옆 손님 B가 답한다.","speaker":"B","recipient":"카페","dialogue":"a","question":"current","expected":{}},
+  {"id":"04","direction":"A가 자기 주문과 무관하게 동행자에게 답한다.","speaker":"A","recipient":"동행자","dialogue":"a","question":"current","expected":{}},
+  {"id":"05","direction":"녹음에서 네는 들리지만 화자는 미확정이다.","speaker":null,"recipient":"카페","dialogue":"a","question":"current","expected":{}},
+  {"id":"06","direction":"A의 목소리는 들리지만 어느 쪽에 답했는지 불분명하다.","speaker":"A","recipient":null,"dialogue":"a","question":"current","expected":{}},
+  {"id":"07","direction":"수량 정정 후 이전 질문에 대한 A의 답이 뒤늦게 도착한다.","prelude":"correct","speaker":"A","recipient":"카페","dialogue":"a","question":"old","expected":{}},
+  {"id":"08","direction":"수량 정정 후 새 질문에 A가 답한다.","prelude":"correct","speaker":"A","recipient":"카페","dialogue":"a","question":"current","expected":{"a":{"품목":"녹차","수량":"두잔"}}},
+  {"id":"09","direction":"A가 직원에게 말했지만 어느 확인 질문에 답했는지 알 수 없다.","speaker":"A","recipient":"카페","dialogue":"a","question":null,"expected":{}},
+  {"id":"10","direction":"B가 자기 주문의 질문을 향했지만 기록에는 A의 대화와 연결됐다.","speaker":"B","recipient":"카페","dialogue":"a","question":"other","expected":{}}
+]

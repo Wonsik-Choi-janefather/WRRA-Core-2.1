@@ -1,0 +1,46 @@
+{
+  "onset_detected_ms": [
+    4060,
+    4200
+  ],
+  "impact_detected": null,
+  "late_onset_detected_ms": [
+    5160,
+    5300
+  ],
+  "small_decode_ms": 4437,
+  "tiny_decode_ms": 558,
+  "independent_worker_schedule": {
+    "B": {
+      "complete_ms": 5408,
+      "registered": true
+    },
+    "A": {
+      "complete_ms": 8787,
+      "registered": true
+    }
+  },
+  "one_worker_schedule": {
+    "A": {
+      "complete_ms": 8787,
+      "registered": true
+    },
+    "B": {
+      "complete_ms": 9345,
+      "registered": false
+    }
+  },
+  "modeled_extra_wait_b_ms": 3937,
+  "bad_registrations_in_late_cases": 0,
+  "within_deadline_onset_missed": 0,
+  "recovered_boundary_response": {
+    "onset_detected_ms": [
+      4960,
+      5100
+    ],
+    "complete_ms": 9687,
+    "registered": false,
+    "replay_using_previous_latency_ms": 3485,
+    "replay_using_previous_completion_ms": 8735
+  }
+}

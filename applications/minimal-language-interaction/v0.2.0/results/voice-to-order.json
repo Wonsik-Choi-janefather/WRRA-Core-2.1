@@ -1,0 +1,61 @@
+{
+  "capture": {
+    "detected": [
+      4960,
+      5100
+    ],
+    "complete": 5936,
+    "asr_ms": 686,
+    "primary": "네.",
+    "reference": "네."
+  },
+  "trials": [
+    {
+      "scenario": "before_approval_commit",
+      "orders_before_recovery": 0,
+      "recovered_without_source_replay": false,
+      "final_orders": 1
+    },
+    {
+      "scenario": "after_approval_commit",
+      "orders_before_recovery": 0,
+      "recovered_without_source_replay": true,
+      "final_orders": 1
+    },
+    {
+      "scenario": "after_registry_commit_before_reply",
+      "orders_before_recovery": 1,
+      "recovered_without_source_replay": true,
+      "final_orders": 1
+    },
+    {
+      "scenario": "old_question",
+      "durable_approval_created": false,
+      "final_orders": 0
+    },
+    {
+      "scenario": "expired_asr",
+      "durable_approval_created": false,
+      "final_orders": 0
+    },
+    {
+      "scenario": "speaker_mismatch",
+      "durable_approval_created": false,
+      "final_orders": 0
+    },
+    {
+      "scenario": "unknown_speaker",
+      "durable_approval_created": false,
+      "final_orders": 0
+    },
+    {
+      "scenario": "asr_disagreement",
+      "durable_approval_created": false,
+      "final_orders": 0
+    },
+    {
+      "scenario": "same_payload_two_sessions",
+      "final_orders": 2
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "model": "wrra-v025-whisper-tiny",
+  "model_file_bytes": 78203619,
+  "load_seconds": 0.545,
+  "peak_process_mib": 226.39,
+  "median_two_pass_ms": 648.8,
+  "clips": [
+    {
+      "clip": "original_assent",
+      "expected_assent": true,
+      "detected_assent": true,
+      "primary": "네.",
+      "reference": "네.",
+      "two_pass_ms": 580.24
+    },
+    {
+      "clip": "cropped_assent_140ms",
+      "expected_assent": true,
+      "detected_assent": true,
+      "primary": "네.",
+      "reference": "네.",
+      "two_pass_ms": 636.38
+    },
+    {
+      "clip": "quantity_reply",
+      "expected_assent": false,
+      "detected_assent": false,
+      "primary": "한자니오",
+      "reference": "한 잔 이유",
+      "two_pass_ms": 648.8
+    },
+    {
+      "clip": "explicit_cancel",
+      "expected_assent": false,
+      "detected_assent": false,
+      "primary": "아니요? 됐어요.",
+      "reference": "아니요? 됐어요",
+      "two_pass_ms": 650.36
+    },
+    {
+      "clip": "opening_noise",
+      "expected_assent": false,
+      "detected_assent": false,
+      "primary": "수고하셨습니다.",
+      "reference": "구독, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요",
+      "two_pass_ms": 1611.2
+    },
+    {
+      "clip": "generated_noise",
+      "expected_assent": false,
+      "detected_assent": false,
+      "primary": "또는 병원에서 사용하는 품목과 단위입니다.",
+      "reference": "네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네, 네",
+      "two_pass_ms": 1688.59
+    },
+    {
+      "clip": "generated_tap",
+      "expected_assent": false,
+      "detected_assent": false,
+      "primary": "그치? 그치?",
+      "reference": "",
+      "two_pass_ms": 555.46
+    }
+  ]
+}

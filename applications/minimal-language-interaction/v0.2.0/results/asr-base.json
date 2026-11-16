@@ -1,0 +1,65 @@
+{
+  "model": "wrra-whisper-base",
+  "model_file_bytes": 147882941,
+  "load_seconds": 0.527,
+  "peak_process_mib": 314.0,
+  "median_two_pass_ms": 1291.61,
+  "clips": [
+    {
+      "clip": "original_assent",
+      "expected_assent": true,
+      "detected_assent": true,
+      "primary": "네.",
+      "reference": "네",
+      "two_pass_ms": 1090.82
+    },
+    {
+      "clip": "cropped_assent_140ms",
+      "expected_assent": true,
+      "detected_assent": false,
+      "primary": "",
+      "reference": "",
+      "two_pass_ms": 1405.28
+    },
+    {
+      "clip": "quantity_reply",
+      "expected_assent": false,
+      "detected_assent": false,
+      "primary": "한 잔이요.",
+      "reference": "한 잔이요.",
+      "two_pass_ms": 1445.47
+    },
+    {
+      "clip": "explicit_cancel",
+      "expected_assent": false,
+      "detected_assent": false,
+      "primary": "아니요 됐어요.",
+      "reference": "아니요 됐어요",
+      "two_pass_ms": 1206.61
+    },
+    {
+      "clip": "opening_noise",
+      "expected_assent": false,
+      "detected_assent": false,
+      "primary": "",
+      "reference": "",
+      "two_pass_ms": 1328.03
+    },
+    {
+      "clip": "generated_noise",
+      "expected_assent": false,
+      "detected_assent": false,
+      "primary": "",
+      "reference": "",
+      "two_pass_ms": 1291.61
+    },
+    {
+      "clip": "generated_tap",
+      "expected_assent": false,
+      "detected_assent": false,
+      "primary": "",
+      "reference": "",
+      "two_pass_ms": 1055.53
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+[
+ {"template":"{품목} {수량} 주세요","weight":5},
+ {"template":"{품목} {수량} 주실래요?","weight":3},
+ {"template":"{품목} {수량} 안 주실래요?","weight":1},
+ {"template":"{수량}으로 바꿔 주세요","weight":4},
+ {"template":"{수량}으로 바꿔 주실래요?","weight":3}
+]

@@ -1,0 +1,173 @@
+{
+  "probe": {
+    "Small": {
+      "text": "한 잔이요.",
+      "reference": "한 잔이요",
+      "yes": false,
+      "ms": 3566
+    },
+    "Tiny": {
+      "text": "한자니오",
+      "reference": "한 잔 이유",
+      "yes": false,
+      "ms": 653
+    }
+  },
+  "trials": {
+    "early/always": {
+      "A": {
+        "queue_ms": 7,
+        "inference_ms": 4592,
+        "buffer_to_result_ms": 4599,
+        "done_ms": 6699,
+        "fallback": true,
+        "transcriptions": [
+          "한 잔이요.",
+          "한 잔이요"
+        ],
+        "prompt": "녹차 한 잔 맞으세요?",
+        "status": "clarification",
+        "registered": false
+      },
+      "B": {
+        "queue_ms": 1549,
+        "inference_ms": 647,
+        "buffer_to_result_ms": 2196,
+        "done_ms": 7346,
+        "fallback": false,
+        "transcriptions": [
+          "네.",
+          "네."
+        ],
+        "prompt": null,
+        "status": "accepted",
+        "registered": true
+      }
+    },
+    "early/budgeted": {
+      "A": {
+        "queue_ms": 5,
+        "inference_ms": 4478,
+        "buffer_to_result_ms": 4483,
+        "done_ms": 6583,
+        "fallback": true,
+        "transcriptions": [
+          "한 잔이요.",
+          "한 잔이요"
+        ],
+        "prompt": "녹차 한 잔 맞으세요?",
+        "status": "clarification",
+        "registered": false
+      },
+      "B": {
+        "queue_ms": 1433,
+        "inference_ms": 505,
+        "buffer_to_result_ms": 1938,
+        "done_ms": 7088,
+        "fallback": false,
+        "transcriptions": [
+          "네.",
+          "네."
+        ],
+        "prompt": null,
+        "status": "accepted",
+        "registered": true
+      }
+    },
+    "edge/always": {
+      "A": {
+        "queue_ms": 8,
+        "inference_ms": 4678,
+        "buffer_to_result_ms": 4686,
+        "done_ms": 9786,
+        "fallback": true,
+        "transcriptions": [
+          "한 잔이요.",
+          "한 잔이요"
+        ],
+        "prompt": null,
+        "status": "held",
+        "registered": false
+      },
+      "B": {
+        "queue_ms": 4636,
+        "inference_ms": 581,
+        "buffer_to_result_ms": 5217,
+        "done_ms": 10367,
+        "fallback": false,
+        "transcriptions": [
+          "네.",
+          "네."
+        ],
+        "prompt": null,
+        "status": "held",
+        "registered": false
+      }
+    },
+    "edge/budgeted": {
+      "A": {
+        "queue_ms": 7,
+        "inference_ms": 614,
+        "buffer_to_result_ms": 621,
+        "done_ms": 5721,
+        "fallback": false,
+        "transcriptions": [
+          "한자니오",
+          "한 잔 이유"
+        ],
+        "prompt": null,
+        "status": "held",
+        "registered": false
+      },
+      "B": {
+        "queue_ms": 571,
+        "inference_ms": 475,
+        "buffer_to_result_ms": 1046,
+        "done_ms": 6196,
+        "fallback": false,
+        "transcriptions": [
+          "네.",
+          "네."
+        ],
+        "prompt": null,
+        "status": "accepted",
+        "registered": true
+      }
+    }
+  },
+  "negative": {
+    "explicit_no": {
+      "capture": [
+        1020,
+        1160
+      ],
+      "recognized_assent": false,
+      "speaker_test_value": "A",
+      "registered": false
+    },
+    "cancel": {
+      "capture": [
+        1340,
+        1480
+      ],
+      "recognized_assent": false,
+      "speaker_test_value": "A",
+      "registered": false
+    },
+    "opening_noise": {
+      "capture": null,
+      "recognized_assent": false,
+      "speaker_test_value": "A",
+      "registered": false
+    },
+    "other_yes": {
+      "capture": [
+        1100,
+        1240
+      ],
+      "recognized_assent": true,
+      "speaker_test_value": "B",
+      "registered": false
+    }
+  }
+}

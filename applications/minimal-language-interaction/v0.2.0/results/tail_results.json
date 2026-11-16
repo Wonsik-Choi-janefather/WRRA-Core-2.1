@@ -1,0 +1,270 @@
+{
+  "results": {
+    "small": {
+      "approved_by_deadline": 7,
+      "attempts": 8,
+      "false_approvals": [],
+      "inference": {
+        "median_ms": 3444.5,
+        "p95_ms": 3758
+      },
+      "paths": [
+        "Small",
+        "Small",
+        "Small",
+        "Small",
+        "Small",
+        "Small",
+        "Small",
+        "Small"
+      ]
+    },
+    "tiny": {
+      "approved_by_deadline": 8,
+      "attempts": 8,
+      "false_approvals": [],
+      "inference": {
+        "median_ms": 535.0,
+        "p95_ms": 638
+      },
+      "paths": [
+        "Tiny",
+        "Tiny",
+        "Tiny",
+        "Tiny",
+        "Tiny",
+        "Tiny",
+        "Tiny",
+        "Tiny"
+      ]
+    },
+    "cascade": {
+      "approved_by_deadline": 8,
+      "attempts": 8,
+      "false_approvals": [],
+      "inference": {
+        "median_ms": 535.0,
+        "p95_ms": 638
+      },
+      "paths": [
+        "Tiny",
+        "Tiny",
+        "Tiny",
+        "Tiny",
+        "Tiny",
+        "Tiny",
+        "Tiny",
+        "Tiny"
+      ]
+    }
+  },
+  "normal_raw": {
+    "small": [
+      {
+        "text": "네.",
+        "reference": "네.",
+        "yes": true,
+        "ms": 3594
+      },
+      {
+        "text": "네.",
+        "reference": "네.",
+        "yes": true,
+        "ms": 3758
+      },
+      {
+        "text": "네.",
+        "reference": "네.",
+        "yes": true,
+        "ms": 3386
+      },
+      {
+        "text": "네.",
+        "reference": "네.",
+        "yes": true,
+        "ms": 3403
+      },
+      {
+        "text": "네.",
+        "reference": "네.",
+        "yes": true,
+        "ms": 3443
+      },
+      {
+        "text": "네.",
+        "reference": "네.",
+        "yes": true,
+        "ms": 3446
+      },
+      {
+        "text": "네.",
+        "reference": "네.",
+        "yes": true,
+        "ms": 3356
+      },
+      {
+        "text": "네.",
+        "reference": "네.",
+        "yes": true,
+        "ms": 3447
+      }
+    ],
+    "tiny": [
+      {
+        "text": "네.",
+        "reference": "네.",
+        "yes": true,
+        "ms": 534
+      },
+      {
+        "text": "네.",
+        "reference": "네.",
+        "yes": true,
+        "ms": 546
+      },
+      {
+        "text": "네.",
+        "reference": "네.",
+        "yes": true,
+        "ms": 462
+      },
+      {
+        "text": "네.",
+        "reference": "네.",
+        "yes": true,
+        "ms": 502
+      },
+      {
+        "text": "네.",
+        "reference": "네.",
+        "yes": true,
+        "ms": 594
+      },
+      {
+        "text": "네.",
+        "reference": "네.",
+        "yes": true,
+        "ms": 638
+      },
+      {
+        "text": "네.",
+        "reference": "네.",
+        "yes": true,
+        "ms": 536
+      },
+      {
+        "text": "네.",
+        "reference": "네.",
+        "yes": true,
+        "ms": 516
+      }
+    ]
+  },
+  "negative_raw": {
+    "small": {
+      "explicit_no": {
+        "text": "아니요?",
+        "reference": "안녕",
+        "yes": false,
+        "ms": 3517
+      },
+      "cancel": {
+        "text": "아니요, 됐어요.",
+        "reference": "아니요, 됐어요.",
+        "yes": false,
+        "ms": 3584
+      },
+      "real_transient": {
+        "text": "",
+        "reference": "",
+        "yes": false,
+        "ms": 3710
+      },
+      "synthetic_impact": {
+        "text": "다음번에 사용하는 품목과 단위입니다.",
+        "reference": "",
+        "yes": false,
+        "ms": 3665
+      },
+      "sustained_noise": {
+        "text": "아이콘. 아이콘. 아이콘. 아이콘. 아이콘. 아이콘. 아이콘. 아이콘. 아이콘. 아이콘. 아이콘. 아이콘. 아이콘. 아이콘.",
+        "reference": "구독과 좋아요는 저에게 아주 큰 힘이 됩니다.",
+        "yes": false,
+        "ms": 5556
+      }
+    },
+    "tiny": {
+      "explicit_no": {
+        "text": "안녕!",
+        "reference": "안녕",
+        "yes": false,
+        "ms": 559
+      },
+      "cancel": {
+        "text": "아니요? 됐어요.",
+        "reference": "아니요? 됐어요",
+        "yes": false,
+        "ms": 512
+      },
+      "real_transient": {
+        "text": "수고하셨습니다.",
+        "reference": "구독, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요, 좋아요",
+        "yes": false,
+        "ms": 1507
+      },
+      "synthetic_impact": {
+        "text": "3월 1일, 2월 2일, 3월 2일, 3월 2일, 3월 2일, 3월 2일, 3월 2일, 3월 2일, 3월 2일, 3월 2일, 3월 2일, 3월 2일, 3월 2일, 3월 2일, 3월 2일, 3월 2일, 3월 2일, 3월 2일, 3월 2일, 3월 2일, 3월 2일, 3월 2일, 3월 2일, 3월 2일, 3월 2일, 3월 2일, 3월 2일, 3월 2일, 3월 2일, 3월 2일, 3월 2일, 3월 2일, 3월 2일, 3월 2일, 3월 2일, 3일, 3일, 3일, 3일, 3일, 3일, 3일, 3일, 3일, 3일, 3일, 3일, 3일, 3일, 3일, 3일,",
+        "reference": "",
+        "yes": false,
+        "ms": 1294
+      },
+      "sustained_noise": {
+        "text": "또는 병원에서 사용하는 품목과 단위입니다.",
+        "reference": "",
+        "yes": false,
+        "ms": 511
+      }
+    }
+  },
+  "negative_capture_ms": {
+    "explicit_no": [
+      4820,
+      4960
+    ],
+    "cancel": [
+      4140,
+      4280
+    ],
+    "real_transient": null,
+    "synthetic_impact": null,
+    "sustained_noise": [
+      4800,
+      4940
+    ]
+  },
+  "queue_model": {
+    "independent": {
+      "b_complete_ms": 5784,
+      "b_queue_ms": 0,
+      "b_registered": true
+    },
+    "one_worker_budgeted": {
+      "b_complete_ms": 6195,
+      "b_queue_ms": 411,
+      "b_registered": true
+    },
+    "one_worker_unbudgeted": {
+      "b_complete_ms": 11751,
+      "b_queue_ms": 5967,
+      "b_registered": false
+    }
+  },
+  "a_budgeted_path": "Tiny; fallback skipped",
+  "early_fallback": {
+    "path": "Tiny → Small",
+    "decode_ms": 6067
+  },
+  "deadline_ms": 9000,
+  "buffer_ready_ms": 5250,
+  "small_budget_ms": 3868
+}

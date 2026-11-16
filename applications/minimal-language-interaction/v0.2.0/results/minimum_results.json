@@ -1,0 +1,161 @@
+{
+  "scenes": 10,
+  "subsets": [
+    {
+      "fields": [],
+      "observation_classes": 3,
+      "conflicts": [
+        [
+          "01",
+          "03",
+          "04",
+          "05",
+          "06",
+          "09",
+          "10"
+        ],
+        [
+          "07",
+          "08"
+        ]
+      ],
+      "minimum_errors": 2,
+      "minimum_missed_approvals_with_zero_wrong_registrations": 2
+    },
+    {
+      "fields": [
+        "speaker"
+      ],
+      "observation_classes": 5,
+      "conflicts": [
+        [
+          "01",
+          "04",
+          "06",
+          "09"
+        ],
+        [
+          "07",
+          "08"
+        ]
+      ],
+      "minimum_errors": 2,
+      "minimum_missed_approvals_with_zero_wrong_registrations": 2
+    },
+    {
+      "fields": [
+        "recipient"
+      ],
+      "observation_classes": 5,
+      "conflicts": [
+        [
+          "01",
+          "03",
+          "05",
+          "09",
+          "10"
+        ],
+        [
+          "07",
+          "08"
+        ]
+      ],
+      "minimum_errors": 2,
+      "minimum_missed_approvals_with_zero_wrong_registrations": 2
+    },
+    {
+      "fields": [
+        "question"
+      ],
+      "observation_classes": 6,
+      "conflicts": [
+        [
+          "01",
+          "03",
+          "04",
+          "05",
+          "06"
+        ]
+      ],
+      "minimum_errors": 1,
+      "minimum_missed_approvals_with_zero_wrong_registrations": 1
+    },
+    {
+      "fields": [
+        "speaker",
+        "recipient"
+      ],
+      "observation_classes": 7,
+      "conflicts": [
+        [
+          "01",
+          "09"
+        ],
+        [
+          "07",
+          "08"
+        ]
+      ],
+      "minimum_errors": 2,
+      "minimum_missed_approvals_with_zero_wrong_registrations": 2
+    },
+    {
+      "fields": [
+        "speaker",
+        "question"
+      ],
+      "observation_classes": 8,
+      "conflicts": [
+        [
+          "01",
+          "04",
+          "06"
+        ]
+      ],
+      "minimum_errors": 1,
+      "minimum_missed_approvals_with_zero_wrong_registrations": 1
+    },
+    {
+      "fields": [
+        "recipient",
+        "question"
+      ],
+      "observation_classes": 8,
+      "conflicts": [
+        [
+          "01",
+          "03",
+          "05"
+        ]
+      ],
+      "minimum_errors": 1,
+      "minimum_missed_approvals_with_zero_wrong_registrations": 1
+    },
+    {
+      "fields": [
+        "speaker",
+        "recipient",
+        "question"
+      ],
+      "observation_classes": 10,
+      "conflicts": [],
+      "minimum_errors": 0,
+      "minimum_missed_approvals_with_zero_wrong_registrations": 0
+    }
+  ],
+  "witness_pairs": {
+    "speaker": [
+      "01",
+      "03"
+    ],
+    "recipient": [
+      "01",
+      "04"
+    ],
+    "question": [
+      "07",
+      "08"
+    ]
+  },
+  "minimum_fields_in_this_experiment": 3
+}
