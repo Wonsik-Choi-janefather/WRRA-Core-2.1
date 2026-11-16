@@ -7,7 +7,11 @@ Wonsik Choi · [ORCID 0009-0001-4263-9772](https://orcid.org/0009-0001-4263-9772
 - [Earlier Korean communication study](https://doi.org/10.5281/zenodo.24268233)
 - [WRRA Core 2.1](https://doi.org/10.5281/zenodo.23386861)
 
-The study uses Korean data. This repository contains the annotated initial utterances and development cases, the ten scripted confirmation scenes, state-count verification, measured timing, scheduling and recovery outputs, and the supporting code. Original voice recordings and Whisper model files are outside the release.
+WRRA Core 2.1 prototype for offline dialogue control. Korean café-ordering experiments test which speaker, addressee, and question relations are required, derive bounded 22- and 43-bit state encodings, and measure speech deadlines, worker contention, and crash recovery.
+
+The release includes annotated utterances and development cases, ten scripted confirmation scenes, state-count checks, raw timing and scheduling measurements, and process-termination results. Original recordings and model weights are outside the release.
+
+**Keywords** · Language Interaction · Dialogue State Tracking · Finite-State Dialogue Control · State-Space Minimality · On-Device Speech Recognition · Deadline-Aware Scheduling · Idempotent Execution · Crash Recovery · Korean Dialogue · WRRA Core 2.1
 
 ## Reproduce the deterministic checks
 
